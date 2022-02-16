@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout 4</title>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+   <div class="wrapper">
+        <header class="header">
+            <div class="container header__container">
+                <img src="@img/logo_Oxit.png" alt="" class="header__logo">
+                <div class="menu header__menu">
+                    <a href="#" class="menu__item">Головна</a>
+                    <a href="#courses" class="menu__item">Програма курсу</a>
+                    <a href="#comments" class="menu__item">Відгуки про курс</a>
+                    <a href="#video" class="menu__item">Відео</a>
+                    <a href="#mentors" class="menu__item">Ментори</a>
+                    <a href="#send-form" class="menu__item menu__send">Подати заявку</a>
+                </div>
+                <div id="burger-btn">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+            <div id="burger">
+                    <a href="#" class="menu__item">Головна</a>
+                    <a href="#courses" class="menu__item">Програма курсу</a>
+                    <a href="#comments" class="menu__item">Відгуки про курс</a>
+                    <a href="#video" class="menu__item">Відео</a>
+                    <a href="#mentors" class="menu__item">Ментори</a>
+                    <a href="#send-form" class="menu__item menu__send">Подати заявку</a>
+            </div>
+        </header>
+        <main>
+            <div class="send-form gray" id="send-form">
+                <div class="container send-form__container">
+                    <div class="send-form__item about">
+                        <div class="about__title">Курси програмування в Луцьку</div>
+                        <p class="about__text">
+                            Сфера ІТ розвивається масимально швидкою Зараз дуже популярно здобувати освітуб що повязана з ІТ. Існує лише одна проблема - брак дійсно кваліфікованих спуціалістів в Українію Під час навчання в університеті ми отримуємо мало практики і "живих", реальних куйсів. ІТ школа OxIT створила таку методику навчання, при якій за короткий час ви отримаєте еуобзідні знання, щоб стати ІТ спуціалістом. Чекаємо вас на наших курсах з програмування в Луцьку. Старт наступного курсу 3 серпня.
+                        </p>
+                    </div>
+                    <form class="send-form__item register">
+                        <div class="form__title">Зареєструватися на курси</div>
+                        <label for="name">Ім'я<span class="red"> *</span></label>
+                        <input type="text" id="name" class="form__input" placeholder="Ім'я">
+                        <label for="lastname">Прізвище<span class="red"> *</span></label>
+                        <input type="text" id="lastname" class="form__input" placeholder="Прізвище">
+                        <label for="qa">Мене більше цікавить<span class="red"> *</span></label>
+                        <input type="text" id="qa" class="form__input" placeholder="developer or QA">
+                        <label for="phone">Номер телефону<span class="red"> *</span></label>
+                        <input type="text" id="phone" class="form__input" placeholder="Номер телефону: +38 XXX XX XX XXX">
+                        <label for="email">Email<span class="red"> *</span></label>
+                        <input type="text" id="email" class="form__input" placeholder="Email">
+                        <div class="checkbox">
+                            <input type="checkbox" name="politics" id="politics">
+                            <label for="politics">Погоджуюсь із <a href="#" class="form__politics-link ">Політикою Конфіденційності</a><span class="red"> *</span></label>
+                        </div>
+                        <div class="form__button">
+                            <button type="submit" class="form__submit">Зареєструватися зараз</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="block" id="courses">
+                <div class="container block__container">
+                    <div class="block__title">Курс "Розробка сайтів"</div>
+                    <div class="block__list courses">
+                        <div class="block__list-item courses__item">
+                            <img src="@img/icons/course-icon-1.png" alt="wordpress" class="courses__img">
+                            <div class="courses__title">Розробка сайтів на WordPress</div>
+                            <div class="courses__text">Курс складається з коротких навчальних відео, на яких ти пізнаєш основи WordPress, навчршся створювати створювати сайти різної складності від блогів до інтернет магазинів. Всі знання закріпити за допомогою тестових завдань.</div>
+                        </div>
+                        <div class="block__list-item courses__item">
+                            <img src="@img/icons/course-icon-2.png" alt="drupal_8" class="courses__img">
+                            <div class="courses__title">Розробка  сайтів на  Drupal 8</div>
+                            <div class="courses__text">Для створення чудових сайтів для Drupal 8, цеглинка за цеглинкою, ти пізнаєш секрети додаткових Drupal-модулів (Views, Rules, Panels, Devel, Paragraph та багато інших).</div>
+                        </div>
+                        <div class="block__list-item courses__item">
+                            <img src="@img/icons/course-icon-3.png" alt="testing" class="courses__img">
+                            <div class="courses__title">Ознайомлення з тестуванням</div>
+                            <div class="courses__text">Ти дізнаєшся про забезпечення якості в контексті різних моделей розробки ПЗ. Також QA-спеціаліст розкаже про види тестування (функціональне, регрисивне, системне, тестування швидкості тощо).</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block blue">
+                <div class="container block__container">
+                    <div class="block__list counters">
+                        <div class="counters__col">
+                            <div class="block__list-item counters__item">
+                                <img src="@img/icons/statistic-icon-1.png" alt="counter" class="counter__img">
+                                <div class="counter__count">25</div>
+                                <div class="counter__name">курсів організовано</div>
+                            </div>
+                            <div class="block__list-item counters__item">
+                                <img src="@img/icons/statistic-icon-2.png" alt="counter" class="counter__img">
+                                <div class="counter__count">836</div>
+                                <div class="counter__name">годин занять проведено</div>
+                            </div>
+                        </div>
+                        <div class="counters__col">
+                            <div class="block__list-item counters__item">
+                                <img src="@img/icons/statistic-icon-3.png" alt="counter" class="counter__img">
+                                <div class="counter__count">500</div>
+                                <div class="counter__name">студентів навчено</div>
+                            </div>
+                            <div class="block__list-item counters__item">
+                                <img src="@img/icons/statistic-icon-4.png" alt="counter" class="counter__img">
+                                <div class="counter__count">120</div>
+                                <div class="counter__name">випусників курсів працевлаштовано</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block" id="comments">
+                <div class="container block__container">
+                    <div class="block__title">Що кажуть студенти наших курсів:</div>
+                    <div class="comments">
+                        <div class="block__list-item comment">
+                            <div class="comment__content">
+                                <i class="fas fa-quote-left comment__quote"></i>
+                                <div class="comment__text">Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якоості Inter Site Builder. Зараз Я можу сказати, що Drupal та OxIT повністю змінили моє життя.</div>
+                                <i class="fas fa-quote-right comment__quote comment__quote_right"></i>
+                            </div>
+                            <div class="comment__pupil">
+                                <div class="comment__name">Коля</div>
+                                <div class="comment__stage">Drupal-девелопер</div>
+                            </div>
+                        </div>
+                        <div class="block__list-item comment">
+                            <div class="comment__content">
+                                <i class="fas fa-quote-left comment__quote"></i>
+                                <div class="comment__text">Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якоості Inter Site Builder. </div>
+                                <i class="fas fa-quote-right comment__quote comment__quote_right"></i>
+                            </div>
+                            <div class="comment__pupil">
+                                <div class="comment__name">Андрій</div>
+                                <div class="comment__stage">Drupal-девелопер</div>
+                            </div>
+                        </div>
+                        <div class="block__list-item comment">
+                            <div class="comment__content">
+                                <i class="fas fa-quote-left comment__quote"></i>
+                                <div class="comment__text">Під час проходження курсів Drupal у школі OxIT я навчився створювати не досить складні сайти та знайшов справу, якою хочу займатись. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якоості Inter Site Builder. Після успішного завершення курсів мені надали можливість продовжити навчання вже в якоості Inter Site Builder.</div>
+                                <i class="fas fa-quote-right comment__quote comment__quote_right"></i>
+                            </div>
+                            <div class="comment__pupil">
+                                <div class="comment__name">Антон</div>
+                                <div class="comment__stage">Drupal-девелопер</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block gray" id="video">
+                <div class="container block__container">
+                    <div class="block__title">Відео</div>
+                    <div class="block__text">Lorem ipsum – назва класичного тексту-«риби».«Риба» – слово з жаргону дизайнерів, що позначає умовний, часто безглуздий текст, що вставляється в макет сторінки. Lorem ipsum являє собою спотворений уривок з філософського трактату Цицерона «Про межі добра і зла», написаного в 45 році до нашої ери латинською мовою. Вперше цей текст був застосований для набору шрифтових зразків невідомим друкарем у XVI столітті.</div>
+                    <iframe class="video" src="https://www.youtube.com/embed/JLHvS0qR5Lw?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="block" id="mentors">
+                <div class="container block__container">
+                    <div class="block__title">Наші ментори</div>
+                    <div class="block__list mentors">
+                        <div class="block__list-item mentor">
+                            <img src="@img/viktor.png" alt="Віктор" class="mentor__img">
+                            <div class="mentor__about">
+                                <div class="mentor__name">Віктор</div>
+                                <div class="mentor__text">
+                                    <p class="mentor__paragraph">Майбутнім управлінцям неабияк пощачтило - адже з ними ділитимеится досвідом упралінець із величезним досвідом! Сам засновник І СЕО компанії InternetDevels, Віктор Левандовський, висловив бажання бути викладачем на курсах проект-менеджменту.</p>
+                                    <p class="mentor__paragraph">Віктору є про що розповісти. Він знає все про створення та керування великими компаніями, ефективну комунікацію, успішні проекти і багато іншого. При цьому він ніколи не скаже, що знає все -саомрозвиток для нього не закінчується жодної звилини.</p>
+                                    <p class="mentor__paragraph">На книжкових Віктора полицях - сотні прочитаних книг про управління і не тільки. А от заповітні мрії не стоять на полиці, бо Віктор вміє апевнено йти до їхнього здійснення. тільки недавно він передавав усім привіт з Ельбрусу - найвищої точки Європи.</p>
+                                    <p class="mentor__paragraph">Буде нестримна, мов гірська лавина, унергія, помножена на мудрість і досвід. Ш ви таке пропустите? Записуйтесь уже зараз!</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__list-item mentor">
+                            <img src="@img/vova.png" alt="Вова" class="mentor__img">
+                            <div class="mentor__about">
+                                <div class="mentor__name">Вова</div>
+                                <div class="mentor__text">
+                                    <p class="mentor__paragraph">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam corporis, beatae nulla deserunt veniam iste.</p>
+                                    <p class="mentor__paragraph">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex commodi dignissimos culpa totam earum nulla, quam dolorum veritatis aut eaque!</p>
+                                    <p class="mentor__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum blanditiis eveniet quod eos velit aliquid id, quos repudiandae illo, nostrum exercitationem fugit quia nisi consequuntur magni sit excepturi a quisquam.</p>
+                                    <p class="mentor__paragraph">Lorem ipsum dolor sit amet.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block__list-item mentor">
+                            <img src="@img/mark.png" alt="Марік" class="mentor__img">
+                            <div class="mentor__about">
+                                <div class="mentor__name">Марк</div>
+                                <div class="mentor__text">
+                                    <p class="mentor__paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero illo dolore, veniam id hic rerum consectetur fugiat voluptate omnis porro, quis magnam tenetur esse, numquam quia aliquid. Accusamus illum quo harum odio sed quaerat soluta voluptatem rem deleniti odit nobis quod ex sit aliquid et a cum, facere ipsam provident.</p>
+                                    <p class="mentor__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, dolore?</p>
+                                    <p class="mentor__paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae adipisci asperiores impedit sapiente sint facere reiciendis, alias mollitia ex molestias delectus enim fuga aperiam consectetur accusamus itaque rerum cum accusantium dolorem ducimus necessitatibus id, consequuntur culpa? Eos, dignissimos adipisci. Pariatur sapiente, eum itaque deleniti, facilis nobis exercitationem assumenda, eos voluptates possimus nesciunt? Laboriosam sed ipsum numquam expedita tempora qui libero voluptas, ex, nulla debitis voluptatem nemo quia ratione labore accusantium!</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block">
+                <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2526.297909074821!2d25.315586145313773!3d50.71441209071292!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4725997e35f529e9%3A0xeba249b67a64b0a9!2sInternetDevels!5e0!3m2!1sru!2sua!4v1644505045734!5m2!1sru!2sua" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div class="block blue">
+                <div class="container block__container">
+                    <div class="block__list contacts">
+                        <div class="contacts__col">
+                            <div class="block__list-item contact">
+                                <i class="fas fa-phone-alt contact__img"></i>
+                                <div class="contact__name">Телефон</div>
+                                <div class="contact__info"><a class="contact__link" href="#">+38 067 332 17 55</a></div>
+                            </div>
+                            <div class="block__list-item contact">
+                                <i class="fas fa-envelope contact__img"></i>
+                                <div class="contact__name">E-mail</div>
+                                <div class="contact__info">office@it.volyn.ua</div>
+                            </div>
+                        </div>
+                        <div class="contacts__col">
+                            <div class="block__list-item contact">
+                                <i class="fas fa-map-marker-alt contact__img"></i>
+                                <div class="contact__name">Адреса</div>
+                                <div class="contact__info">вул. Боженка 34г, Луцьк</div>
+                            </div>
+                            <div class="block__list-item contact">
+                                <i class="fab fa-facebook-f contact__img"></i>
+                                <div class="contact__name">Facebook</div>
+                                <div class="contact__info"><a class="contact__link" href="https://facebook.com/oxitschool">facebook.com/oxitschool</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="gray">
+            <div class="copyright">©  Copyright 2018-2021 <a href="https://internetdevels.ua" class="copyright__link">Internet Devels</a></div>
+            <a href="#" class="politics" >Умови політики конфіденційності</a>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script> 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
