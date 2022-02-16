@@ -7,7 +7,6 @@ var gulp  = require('gulp'),
   autoprefixer = require('autoprefixer'),
   plumber = require('gulp-plumber'),
   replace = require('gulp-replace'),
-  newer = require('gulp-newer'),
   browsersync = require('browser-sync'),
   del = require('del');
 
@@ -30,10 +29,10 @@ function buildCss() {
         .pipe(postcss([ autoprefixer({ overrideBrowserslist: ['last 3 versions']})]))
         .pipe(sourcemaps.write())
         .pipe(gulp.dest('./dist/css/'))
+        .pipe(browsersync.stream())
         .pipe(cleanCss())
         .pipe(rename({suffix: '.min'}))
         .pipe(gulp.dest('./dist/css/'))
-        .pipe(browsersync.stream())
       }
 
 const fs = require("fs"),
